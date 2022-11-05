@@ -17,10 +17,3 @@ function render() {
   let container = document.getElementById("container");
   container.textContent = state.count;
 }
-dispatch({ type: "@@init" });
-
-let button = document.getElementById("button");
-
-button.addEventListener("click", () => {
-  dispatch({ type: "counter/increment" });
-});
