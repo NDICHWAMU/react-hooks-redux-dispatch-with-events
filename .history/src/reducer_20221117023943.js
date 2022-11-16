@@ -29,6 +29,6 @@ button.addEventListener("click", () => {
 
 let decrease = document.getElementById("decrease")
 
-decrease.addEventListener("click", () => {
+button.addEventListener("click", () => {
   dispatch({ type: "counter/decrement" });
 });

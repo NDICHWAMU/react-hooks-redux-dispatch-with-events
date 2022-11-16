@@ -5,7 +5,7 @@ function reducer(state ={count: 0},action){
         case "counter/increment":
             return {count: state.count +1};
         case "counter/decrement":
-          return {count: state.count -1};
+          return {count: state.count +1};
          default:
             return state;
     }
@@ -29,6 +29,6 @@ button.addEventListener("click", () => {
 
 let decrease = document.getElementById("decrease")
 
-decrease.addEventListener("click", () => {
+button.addEventListener("click", () => {
   dispatch({ type: "counter/decrement" });
 });
